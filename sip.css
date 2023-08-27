@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  display: flex;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.container1 {
+  margin: 30px auto;
+
+  background-color: rgb(193, 208, 248);
+  width: 1000px;
+
+  border-radius: 15px;
+  border-style: solid;
+  border-color: rgb(234, 242, 248);
+  border-width: 4px;
+  position: relative;
+}
+
+h1 {
+  padding: 15px 10px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-container {
+  display: grid;
+}
+
+.chartAndDetails-container {
+  display: grid;
+}
+
+.text {
+  margin: 30px 50px;
+}
+
+.input-text {
+  font-size: 25px;
+  padding: 15px 0px;
+}
+
+.search-bar {
+  height: 30px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: gray;
+  background-color: rgb(234, 238, 249);
+}
+
+.calculate {
+  display: flex;
+  margin: 16px auto;
+  padding: 7px 15px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 5px;
+  background-color: #1547fb;
+}
+
+.chartContainer {
+  float: right;
+  margin: 10px auto;
+  width: 320px;
+  padding-top: 25px;
+}
+
+.InvestmentDetails {
+  font-size: 18px;
+  padding: 5px 5px;
+}
+.details {
+  justify-content: center;
+  margin: 20px auto;
+}
+.number1 {
+  padding-left: 40px;
+}
+.number2 {
+  padding-left: 81px;
+}
+.number3 {
+  padding-left: 72px;
+}
+
+.calculate:active {
+  box-shadow: 3px 3px 4px gray;
+  padding: 7px 18px 0px 18px;
+}
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container1 {
+    margin: 2px auto;
+  }
+}

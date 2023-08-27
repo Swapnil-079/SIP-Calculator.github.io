@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="sip.css" />
+    <!-- Goggle Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FavIcon  -->
+    <link rel="icon" href="My project (1).jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="container1">
+      <h1>SIP Calculator</h1>
+
+      <div class="container2">
+        <div class="text-container">
+          <div class="text">
+            <p class="input-text">Monthly Investment</p>
+            <input
+              type="number"
+              class="search-bar search-bar1"
+              placeholder="₹5000"
+            />
+          </div>
+          <div class="text">
+            <p class="input-text">Expected Return Rate(p.a)</p>
+            <input
+              type="number"
+              class="search-bar search-bar2"
+              placeholder="12%"
+            />
+          </div>
+          <div class="text">
+            <p class="input-text">Time Period (in years)</p>
+            <input
+              type="number"
+              class="search-bar search-bar3"
+              placeholder="10"
+            />
+          </div>
+        </div>
+
+        <div class="chartAndDetails-container">
+          <div class="chartContainer">
+            <canvas class="my-chart"></canvas>
+          </div>
+          <div class="details">
+            <p class="InvestmentDetails">
+              Invested Amount<span class="number1">₹6,00,000</span>
+            </p>
+            <p class="InvestmentDetails">
+              Est. Returns<span class="number2">₹5,61,695</span>
+            </p>
+            <p class="InvestmentDetails">
+              Total amount<span class="number3">₹11,61,695</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="calculate">Calculate</button>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="sip.js"></script>
+  </body>
+</html>
